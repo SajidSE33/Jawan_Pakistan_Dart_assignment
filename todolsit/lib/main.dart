@@ -6,6 +6,7 @@ import 'package:todolsit/index.dart';
 import 'package:todolsit/login.dart';
 import 'package:todolsit/plusscreen.dart';
 import 'package:todolsit/profile.dart';
+import 'package:todolsit/signup.dart';
 
 void main() => runApp(const MyApp());
 
@@ -17,8 +18,9 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: MyHomePage(),
-      home: LoginPage(),
-      // home: communitySplash(),
+      // home: LoginPage(),
+      home: communitySplash(),
+      // home: signup(),
     );
   }
 }

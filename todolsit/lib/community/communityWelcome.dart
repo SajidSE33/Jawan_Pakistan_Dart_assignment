@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todolsit/community/communityOrganizeTask.dart';
+import 'package:todolsit/login.dart';
+import 'package:todolsit/signup.dart';
 
 class welcome extends StatelessWidget {
   const welcome({super.key});
@@ -81,7 +83,13 @@ class welcome extends StatelessWidget {
                   Container(
                     width: 330,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    LoginPage()));
+                      },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
@@ -100,7 +108,12 @@ class welcome extends StatelessWidget {
                     decoration:
                         BoxDecoration(border: Border.all(color: Colors.blue)),
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (BuildContext context) => signup()));
+                      },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
